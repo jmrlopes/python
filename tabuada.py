@@ -1,6 +1,3 @@
-from colorama import init
-from termcolor import colored
-
 resposta = ""
 pontuacao = 0
 nome = input("Como te chamas ? ")
@@ -18,7 +15,7 @@ while resposta != "fim":
                 print("CERTO")
                 pontuacao += 1
             else:
-                print(colored("ERRADO", "red")
+                print("ERRADO")
                 pontuacao -= 0.5
 print("Boa " + nome + ". A tua pontuação foi ")
 print(pontuacao*100)
